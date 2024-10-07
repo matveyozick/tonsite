@@ -1,0 +1,62 @@
+/* Основные стили для тела страницы */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black; /* Черный фон */
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+/* Контейнер для канваса с матрицей */
+.matrix-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Стиль для размытого блока с текстом */
+.blurred-content {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.1); /* Увеличили прозрачность до 30% */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px); /* Эффект размытия */
+    text-align: center;
+}
+
+/* Логотип */
+.logo {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 15px; /* Центрируем логотип и добавляем отступ снизу */
+}
+
+/* Стиль для доменного имени */
+.domain-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1897e4; /* Синий цвет */
+    text-transform: uppercase; /* Капсом */
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #1897e4; /* Линия под доменом */
+}
+
+.blurred-content h1, .blurred-content p {
+    color: white;
+    margin: 10px 0;
+}
+
+a {
+    color: #1897e4;
+    text-decoration: none;
+}
